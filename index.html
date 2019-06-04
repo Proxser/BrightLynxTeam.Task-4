@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task 3</title>
+    <style type="text/css">
+
+        .wrapper {
+            display: block;
+            width: 418px;
+            margin: 0 auto;
+        }
+
+        .cell {
+            float: left;
+            display: block;
+            width: 100px;
+            height: 100px;
+            outline: 1px solid #dfdfdf;
+            margin: 0px;
+        }
+
+        .black  { background: #242423; }
+        .red    { background: #E86561; }
+        .green  { background: #61E786; }
+        .blue   { background: #61C1E8; }
+        .yellow { background: #E8CA61; }
+        .purple { background: #48435C; }
+        .orange { background: #DE9E36; }
+        .gray   { background: #E9E6FF; }
+
+        .hidden { background: #FFFFFF; }
+
+        .start, .timer { margin-top: 25px; }
+        .start { padding: 6px 12px; }
+        .timer { margin-left: 25px; }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="field"></div>
+        <button class="start">Старт</button>
+        <label class="timer"><b>00:00.000</b></label>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
