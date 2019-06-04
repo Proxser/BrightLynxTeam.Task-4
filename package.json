@@ -1,7 +1,7 @@
 {
-  "name": "task-three",
+  "name": "task-four",
   "version": "0.0.1",
-  "description": "Решения 3-го задания для Bright Lynx Team",
+  "description": "Решения 4-го задания для Bright Lynx Team",
   "main": "main.js",
   "scripts": {
     "build": "babel source -d dist --presets es2015",

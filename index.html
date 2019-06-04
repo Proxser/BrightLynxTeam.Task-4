@@ -4,46 +4,206 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Task 3</title>
+    <title>Task 4</title>
     <style type="text/css">
+
+        body { font-family: sans-serif; }
 
         .wrapper {
             display: block;
-            width: 418px;
+            width: 578px;
             margin: 0 auto;
+        }
+
+        .header, .middle, .footer { display: flex; }
+
+        .corner-cell {
+            width: 32px;
+            height: 32px;
+            overflow: hidden;
+        }
+
+        .center-cell {
+            display: flex;
+            width: 514px;
+            height: 32px;
+            overflow: hidden;
+        }
+
+        .letter {
+            width: 64px;
+            height: 32px;
+            text-align: center;
+            line-height: 32px;
+            margin-right: 1px;
+            font-weight: 600;
+            color: #AAA;
+        }
+
+        .number {
+            width: 32px;
+            height: 64px;
+            text-align: center;
+            line-height: 64px;
+            font-weight: 600;
+            color: #AAA;
+        }
+
+        .left-cell, .right-cell {
+            width: 32px;
+            height: 514px;
+            overflow: hidden;
+        }
+
+        .field {
+
+            width: 512px;
+            height: 512px;
+            border: 1px solid #dfdfdf;
         }
 
         .cell {
             float: left;
             display: block;
-            width: 100px;
-            height: 100px;
-            outline: 1px solid #dfdfdf;
+            width: 64px;
+            height: 64px;
+            /*outline: 1px solid #dfdfdf;*/
             margin: 0px;
         }
 
         .black  { background: #242423; }
-        .red    { background: #E86561; }
+        .white  { background: #FFFFFF; }
         .green  { background: #61E786; }
         .blue   { background: #61C1E8; }
-        .yellow { background: #E8CA61; }
-        .purple { background: #48435C; }
-        .orange { background: #DE9E36; }
-        .gray   { background: #E9E6FF; }
-
-        .hidden { background: #FFFFFF; }
-
-        .start, .timer { margin-top: 25px; }
-        .start { padding: 6px 12px; }
-        .timer { margin-left: 25px; }
 
     </style>
 </head>
 <body>
     <div class="wrapper">
-        <div class="field"></div>
-        <button class="start">Старт</button>
-        <label class="timer"><b>00:00.000</b></label>
+        <div class="header">
+            <div class="corner-cell"></div>
+            <div class="center-cell">
+                <div class="letter">A</div>
+                <div class="letter">B</div>
+                <div class="letter">C</div>
+                <div class="letter">D</div>
+                <div class="letter">E</div>
+                <div class="letter">F</div>
+                <div class="letter">G</div>
+                <div class="letter">H</div>
+            </div>
+            <div class="corner-cell"></div>
+        </div>
+        <div class="middle">
+            <div class="left-cell">
+                <div class="number">8</div>
+                <div class="number">7</div>
+                <div class="number">6</div>
+                <div class="number">5</div>
+                <div class="number">4</div>
+                <div class="number">3</div>
+                <div class="number">2</div>
+                <div class="number">1</div>
+            </div>
+            <div class="field">
+                <div class="cell white"></div>
+                <div class="cell black"></div>
+                <div class="cell white"></div>
+                <div class="cell black"></div>
+                <div class="cell white"></div>
+                <div class="cell black"></div>
+                <div class="cell white"></div>
+                <div class="cell black"></div>
+
+                <div class="cell black"></div>
+                <div class="cell white"></div>
+                <div class="cell black"></div>
+                <div class="cell white"></div>
+                <div class="cell black"></div>
+                <div class="cell white"></div>
+                <div class="cell black"></div>
+                <div class="cell white"></div>
+
+                <div class="cell white"></div>
+                <div class="cell black"></div>
+                <div class="cell white"></div>
+                <div class="cell black"></div>
+                <div class="cell white"></div>
+                <div class="cell black"></div>
+                <div class="cell white"></div>
+                <div class="cell black"></div>
+
+                <div class="cell black"></div>
+                <div class="cell white"></div>
+                <div class="cell black"></div>
+                <div class="cell white"></div>
+                <div class="cell black"></div>
+                <div class="cell white"></div>
+                <div class="cell black"></div>
+                <div class="cell white"></div>
+
+                <div class="cell white"></div>
+                <div class="cell black"></div>
+                <div class="cell white"></div>
+                <div class="cell black"></div>
+                <div class="cell white"></div>
+                <div class="cell black"></div>
+                <div class="cell white"></div>
+                <div class="cell black"></div>
+
+                <div class="cell black"></div>
+                <div class="cell white"></div>
+                <div class="cell black"></div>
+                <div class="cell white"></div>
+                <div class="cell black"></div>
+                <div class="cell white"></div>
+                <div class="cell black"></div>
+                <div class="cell white"></div>
+
+                <div class="cell white"></div>
+                <div class="cell black"></div>
+                <div class="cell white"></div>
+                <div class="cell black"></div>
+                <div class="cell white"></div>
+                <div class="cell black"></div>
+                <div class="cell white"></div>
+                <div class="cell black"></div>
+
+                <div class="cell black"></div>
+                <div class="cell white"></div>
+                <div class="cell black"></div>
+                <div class="cell white"></div>
+                <div class="cell black"></div>
+                <div class="cell white"></div>
+                <div class="cell black"></div>
+                <div class="cell white"></div>
+            </div>
+            <div class="right-cell">
+                <div class="number">8</div>
+                <div class="number">7</div>
+                <div class="number">6</div>
+                <div class="number">5</div>
+                <div class="number">4</div>
+                <div class="number">3</div>
+                <div class="number">2</div>
+                <div class="number">1</div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="corner-cell"></div>
+            <div class="center-cell">
+                <div class="letter">A</div>
+                <div class="letter">B</div>
+                <div class="letter">C</div>
+                <div class="letter">D</div>
+                <div class="letter">E</div>
+                <div class="letter">F</div>
+                <div class="letter">G</div>
+                <div class="letter">H</div>
+            </div>
+            <div class="corner-cell"></div>
+        </div>
+        
     </div>
 
     <script src="main.js"></script>
